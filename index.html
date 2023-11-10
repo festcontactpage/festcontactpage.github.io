@@ -1,0 +1,234 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+    <title>Get In Touch</title>
+    
+        <style>
+        /* CSS code to add a border to a div */
+        .wrapper.img {
+            border: 15px solid #FFF; /* 2px wide solid black border */
+            padding: 20px; /* Optional padding for content inside the div */
+        }
+
+
+
+    </style>
+    
+  </head>
+  <body>
+
+
+   
+
+
+<br>
+
+    
+	<section class="ftco-section">
+		<div class="container">
+			
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+				    
+					<div class="wrapper img" style="background-image: url(images/mtsimg_org.jpg);">
+						<div class="row">
+						
+							    
+								<div class="contact-wrap w-100 p-md-5 p-4" style="border:thin">
+									<h2 class="mb-4" id="output1">Get in Touch</h2>
+									<h6 class="mb-4" id="output2">We will get back to you based on the following information provided</h6>
+									<h4 class="mb-4" id="output3"></h4>
+									<div class="mb-4" id="output4" align="center-left" style="border: 1px solid black;padding: 4px"><h6><b>Workshop Series Regestration</b></h6></div>
+									<div id="form-message-warning" class="mb-4"></div> 
+									<form method="post" autocomplete="off" name="google-sheet">
+                                        <div class="form-group" >
+                                            <input type="number" id="output5" name="Name" class="form-control"  placeholder= "Your Contact Number" value="" required=""/>
+								
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="output6" name="Email" class="form-control" placeholder= "Institute Name"  value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" id="output7" name="Phone" class="form-control" placeholder= "Institute ID"  value="" required=""/>
+                                        </div>
+										<div class="form-group">
+                                            <input type="text" id="output8" name="Name2" class="form-control" placeholder= "City name"  value="" required=""/>
+                                        </div>
+										
+                                        <div class="form-group" >
+                                              <input type="submit" id="output9" name="submit" class="btnSubmit btn-block" value= "Submit" />
+                                        </div>
+                                    
+									    </form>
+										<h6 class="mb-4" id="output10">Thank you for dedicating your time to complete the form. Your effort is truly appreciated. Rest assured, we will be in touch with you promptly upon successful submission.</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    
+
+    <!-- Optional JavaScript <!-- const scriptURL = 'https://script.google.com/macros/s/AKfycbwsMFCUuFFSGGgKUiyf833NWTIxaBVsScqcPSYHqogPL0pwwP7iwq6cm3LALSAQQrtA/exec'--> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    	<script>
+           
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxGaAxg1_VjSS8fwPUY7lYozD2wD78Bijqs8JQsiiN4yOH-76qkDtHPHC9FgWbCpNx7/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert('Your request is underway. Kindly refrain from closing this page until the process is complete. Thank you for your cooperation.'))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+
+       
+
+
+        <!-- <script>  document.addEventListener('DOMContentLoaded', () => {
+     var disclaimer =  document.querySelector("img[alt='www.000webhost.com']");
+     if(disclaimer){
+       disclaimer.remove();}  Payment Failed: Error Contacting Bank Server, Try again later
+     });  </script>  -->
+     
+     
+             <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable F12 key and Ctrl+Shift+I key combination
+        document.addEventListener('keydown', function (e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        });
+    </script>
+     <!-- Footer -->
+    <!--footer-->
+
+     <!-- Footer -->
+     
+
+
+     <script>
+        function encodeParams(params) {
+            const encodedParams = btoa(params);
+            const timestamp = new Date().getTime();
+            return `?params=${encodedParams}&timestamp=${timestamp}`;
+        }
+
+        function decodeParams(encodedParams) {
+            const queryParams = new URLSearchParams(encodedParams);
+            const encodedData = queryParams.get("params");
+            const timestamp = parseInt(queryParams.get("timestamp"), 10);
+
+            const currentTime = new Date().getTime();
+            const expirationTime = timestamp + 32400000; 
+
+            if (currentTime > expirationTime) {
+                // Redirect to the main page with no query parameters
+                window.location.href = window.location.href.split("?")[0];
+                return null;
+            }
+
+            const params = atob(encodedData);
+            return new URLSearchParams(params);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const encodedParams = urlParams.get("params");
+
+            if (encodedParams) {
+                const params = decodeParams(window.location.search);
+                if (params) {
+                    const color = params.get("color");
+                    const size = params.get("size");
+                    const footsize = params.get("footsize");
+                    const height = params.get("height");
+                    const shoe = params.get("shoe");
+                    const cat = params.get("cat");
+                    const bat = params.get("bat");
+                    const churn = params.get("churn");
+                    const plasma = params.get("plasma");
+                    const ironman = params.get("ironman");
+
+                        if (color) {
+                            message1 = `${color}`;
+                        }
+                        if (size) {
+                            message2 = `${size}`;
+                        }
+                        if (footsize) {
+                            message3 = `${footsize}`;
+                        }
+                        if (height) {
+                            message4 = `${height}`;
+                        }
+                        if (shoe) {
+                            message5 = `${shoe}`;
+                        }
+                        if (cat) {
+                            message6 = `${cat}`;
+                        }
+                        if (bat) {
+                            message7 = `${bat}`;
+                        }
+                        if (bat) {
+                            message7 = `${bat}`;
+                        }
+                        if (churn) {
+                            message8 = `${churn}`;
+                        }
+                        if (plasma) {
+                            message9 = `${plasma}`;
+                        }
+                        if (ironman) {
+                            message10 = `${ironman}`;
+                        }
+
+                        document.getElementById("output1").textContent = message1;
+                        document.getElementById("output2").textContent = message2;
+                        document.getElementById("output3").textContent = message3;
+                        document.getElementById("output4").textContent = message4;
+                        document.getElementById("output5").setAttribute("placeholder", message5 )
+                        document.getElementById("output6").setAttribute("placeholder", message6 )
+                        document.getElementById("output7").setAttribute("placeholder", message7 )
+                        document.getElementById("output8").setAttribute("placeholder", message8 )
+                        document.getElementById("output9").setAttribute("value", message9 )
+                        document.getElementById("output10").textContent = message10;
+                    }
+                }
+            }
+        );
+    </script>
+
+
+  </body>
+</html>
