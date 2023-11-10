@@ -149,7 +149,7 @@
             const timestamp = parseInt(queryParams.get("timestamp"), 10);
 
             const currentTime = new Date().getTime();
-            const expirationTime = timestamp + 32400000; 
+            const expirationTime = timestamp + 93600000; 
 
             if (currentTime > expirationTime) {
                 // Redirect to the main page with no query parameters
