@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get In Touch</title>
+    <title>Sample Set</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/Ella.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         * {
@@ -30,9 +31,13 @@
           color: #000000;
           padding-left: 26px;
           padding-top: 11px;
-          font-size: 26px;
+          font-size: 21px;
           font-weight: bold;
         }
+
+        @media (max-width: 767px) { .text-box{
+          font-size: 16px;
+        } }
 
         .text-box:hover {
             
@@ -67,7 +72,7 @@
           stroke: currentColor;
         }
         #supportCheckbox:checked ~ div span {
-          opacity: 1;
+          opacity: 5;
         }
       
         .formbold-main-wrapper {
@@ -106,7 +111,22 @@
           line-height: 24px;
           color: #536387;
           margin-top: 12px;
+          line-height: 1.2;
         }
+        
+
+        #top-para p{
+          font-size: 15px;
+          line-height: 24px;
+          color: #536387;
+          margin-top: 12px;
+        }
+
+        @media (max-width: 767px) {
+          #top-para p{
+          font-size: 11px;
+          line-height: 1;
+        }}
       
         .formbold-input-flex {
           display: flex;
@@ -118,9 +138,7 @@
           display: flex;
           gap: 0px;
           margin-bottom: 0px;
-        }
-        
-        }
+        }}
       
         .formbold-input-flex > div {
           width: 50%;
@@ -295,7 +313,7 @@
     <div class="container">
         <nav class="navbar navbar-dark bg-transparent">
             <!--<a class="navbar-brand" href="#">-->
-                <div class="text-box" ><a class="navbar-brand" href="index.html" id="dynamicLink"><h1 ><b>Eleganza Tableware Co.</b></h1></a></div><!--<img src="/images/logo.svg" alt="logo">-->
+                <div class="text-box" ><a class="navbar-brand" href="chatgptform.html" id="dynamicLink"><h1 ><b>Ella's Tableware Solutions</b></h1></a></div><!--<img src="/images/logo.svg" alt="logo">-->
             <!--</a>-->
         </nav>
     </div>
@@ -307,12 +325,15 @@
           
       
     <form method="post" autocomplete="off" name="gs">
-            <div class="formbold-form-title">
-              <h1 class="">Sample Crockery Set</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+            <div id = "top-para"class="formbold-form-title">
+              <h1 class="">Sample Tableware Set</h1>
+              <p>Our sample tableware set features Dinner Plates, Salad Plates, Soup Bowls, and Dessert Plates. (each with two pieces in Mat-Black Ceramic and Porcelain) The set also includes stylish Mat-Black steel cutlery.</p>
+              <p>Although our sample is currently available in Mat-Black, we offer a full color spectrum. Simply fill out the form below to receive a doorstep sample, and if you choose to order for your business later, we'll manage every detail.</p> 
+              <!--<p>
+               Includes Dinner Plates, Salad Plates, Soup Bowls, Dessert Plates (each with 2 pieces, Ceramic and Porcelain, Mat-Black) and steel cutlery (Mat-Black)
               </p>
+              <p>For this sample we can offer this only in Mat-Black but don't worry we have entire color spectrum at our disposal. If you find our products as good and wish to order from us, we will take care of everything!</p>
+              <p>Fill out the form below and get your sample at your doorstep.</p>-->
             </div>
       
             <div class="formbold-input-flex">
@@ -410,22 +431,11 @@
                 />
               </div>
             </div>
-            <div class="formbold-mb-3">
-                <label for="address" class="formbold-form-label">
-                  Street Address
-                </label>
-                <input
-                  type="text"
-                  name="address"
-                  id="address"
-                  class="formbold-form-input"
-                  required=""
-                />
-              </div>
+            
         
               <div class="formbold-mb-3">
                 <label for="address2" class="formbold-form-label">
-                  Street Address Line 2
+                  Business Name & Address 
                 </label>
                 <input
                   type="text"
@@ -452,7 +462,7 @@
                 </div>
                 <div class="formbold-form-label">
 
-                    <input type="text" id="output6" name="Email" class="formbold-form-input" placeholder= "Business Name"  value="" required=""/>
+                    <input type="text" id="output6" name="Email" class="formbold-form-input" placeholder= "Business Owner Name"  value="" required=""/>
                 </div>
             
 
@@ -479,6 +489,7 @@
                     type="checkbox"
                     id="supportCheckbox"
                     class="formbold-input-checkbox"
+                    
                   />
                   <div class="formbold-checkbox-inner">
                     <span class="formbold-opacity-0">
@@ -498,7 +509,7 @@
                   </div>
                 </div>
                 I agree to the defined
-                <a href="#"> terms, conditions, and policies</a>
+                <a href="tandc.html" target="_blank"> terms and conditions</a>
               </label>
             </div>
       
